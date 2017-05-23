@@ -10,7 +10,7 @@ export default compose(
   const { navigate } = props.navigation
   return (
     <View>
-      <Text>This is HomeScreen</Text>
+      <Text>This is LoginScreen</Text>
       <Button onPress={() => navigate('Home')} title="Enter" />
     </View>
   )
