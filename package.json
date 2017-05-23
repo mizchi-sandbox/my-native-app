@@ -5,6 +5,7 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-mizchi": "^1.0.2",
+    "flow-bin": "0.40",
     "jest-expo": "^0.4.0",
     "react-native-scripts": "0.0.29",
     "react-test-renderer": "16.0.0-alpha.6"
@@ -12,6 +13,8 @@
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "react-native-scripts start",
+    "typecheck": "flow",
+    "typecheck:restart": "flow stop; flow",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
