@@ -1,9 +1,9 @@
-/* @flow */
+/* eslint-disable */
 // Copied from https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/src/bin/crna-entry.js
-import * as Expo from 'expo'
+import Expo from 'expo'
 import React from 'react'
 import { View } from 'react-native'
-import App from './App'
+import App from './components/App'
 
 // we don't want this to require transformation
 class AwakeInDevApp extends React.Component {
