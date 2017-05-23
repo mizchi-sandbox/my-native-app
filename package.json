@@ -2,7 +2,7 @@
   "name": "my-native-app",
   "version": "0.1.0",
   "private": true,
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "./src/entry.js",
   "scripts": {
     "start": "react-native-scripts start",
     "lint": "eslint src",
