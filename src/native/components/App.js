@@ -3,12 +3,15 @@ import React from 'react'
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
 import { addNavigationHelpers } from 'react-navigation'
+import { withProvider } from 'shared/components/hoc/withDefaultProvider'
+import createStore from 'shared/store'
 import AppNavigator from '../navigators/AppNavigator'
-import withDefaultProvider from './hoc/withDefaultProvider'
+import reducer from '../reducers'
 
-export default compose(withDefaultProvider, connect(i => i))(function App(
-  props: any
-) {
+export default compose(
+  withProvider(() => createStore(reducer)),
+  connect(i => i)
+)(function App(props: any) {
   return (
     <AppNavigator
       navigation={addNavigationHelpers({

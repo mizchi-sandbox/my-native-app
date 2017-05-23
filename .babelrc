@@ -1,5 +1,14 @@
 {
   "presets": ["babel-preset-expo"],
+  "plugins": [
+    ["module-resolver", {
+     "root": ["./src"],
+     "alias": {
+       "native": "./native",
+       "shared": "./shared"
+     }
+   }]
+  ],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]

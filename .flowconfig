@@ -59,5 +59,8 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
 unsafe.enable_getters_and_setters=true
 
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+
 [version]
 ^0.40.0

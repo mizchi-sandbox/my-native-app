@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import defaultInitStore from '../../store'
 
 let _store: any = null
-function withProvider<P>(initStore: Function): $$HoC<P> => $$HoC<P> {
+export function withProvider<P>(initStore: Function): $$HoC<P> => $$HoC<P> {
   return Wrapped =>
     class ReduxProvider extends React.Component {
       props: P

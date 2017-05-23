@@ -2,7 +2,7 @@
   "name": "my-native-app",
   "version": "0.1.0",
   "private": true,
-  "main": "./src/index.js",
+  "main": "./src/native/index.js",
   "scripts": {
     "start": "react-native-scripts start",
     "lint": "eslint src",
@@ -32,6 +32,7 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^2.7.1",
     "eslint": "^3.19.0",
     "eslint-config-mizchi": "^1.0.2",
     "flow-bin": "0.40",
