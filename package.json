@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "0.0.29",
+    "eslint": "^3.19.0",
+    "eslint-config-mizchi": "^1.0.2",
     "jest-expo": "^0.4.0",
+    "react-native-scripts": "0.0.29",
     "react-test-renderer": "16.0.0-alpha.6"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
