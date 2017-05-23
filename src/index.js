@@ -1,5 +1,4 @@
 /* eslint-disable */
-// Copied from https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/src/bin/crna-entry.js
 import Expo from 'expo'
 import React from 'react'
 import { View } from 'react-native'
