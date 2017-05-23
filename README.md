@@ -1,3 +1,29 @@
+# My Native App
+
+This repository is my experiment field with react-native
+
+- create-react-native-app
+- react-navigation
+- flowtype
+- eslint/prettier
+- redux
+
+## Goal
+
+I want to check I can implement mobile apps without `eject`.
+
+## TODO
+
+- [x] Use react-navigation
+- [ ] OAuth with Twitter and Facebook
+- [ ] Use Google Map
+- [ ] Animation
+- [ ] CI
+- [ ] CodePush
+- [ ] Firebase
+
+---
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
