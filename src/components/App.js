@@ -1,24 +1,20 @@
 /* @flow */
-/* eslint-disable import/named */
 import React from 'react'
-import { Constants } from 'expo'
-import { StyleSheet, View, Dimensions } from 'react-native'
-import Navigator from './Navigator'
+import { compose } from 'recompose'
+import { connect } from 'react-redux'
+import { addNavigationHelpers } from 'react-navigation'
+import AppNavigator from '../navigators/AppNavigator'
+import withDefaultProvider from './hoc/withDefaultProvider'
 
-export default function App() {
+export default compose(withDefaultProvider, connect(i => i))(function App(
+  props: any
+) {
   return (
-    <View style={styles.container}>
-      <Navigator style={{ width: Dimensions.get('window').width }} />
-    </View>
+    <AppNavigator
+      navigation={addNavigationHelpers({
+        dispatch: props.dispatch,
+        state: props.navigation
+      })}
+    />
   )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight
-  }
 })
