@@ -22,6 +22,8 @@
 ; Ignore misbehaving dev-dependencies
 .*/node_modules/xdl/build/*
 .*/node_modules/reqwest/tests/*
+.*/node_modules/react-native-web*
+.*/node_modules/animated*
 
 ; Ignore missing expo-sdk dependencies (temporarily)
 ; https://github.com/exponent/exponent-sdk/issues/36
