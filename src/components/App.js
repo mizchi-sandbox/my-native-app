@@ -1,23 +1,28 @@
 /* @flow */
+/* eslint-disable import/named */
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Constants } from 'expo'
+import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
-// const SimpleApp = StackNavigator({
-//   Home: { screen: HomeScreen }
-// })
-//
-// class HomeScreen extends React.Component {
-//   static navigationOptions = {
-//     title: 'Welcome'
-//   }
-// }
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Home'
+  }
+
+  render() {
+    return <Text>This is Home</Text>
+  }
+}
+
+const Navigator = StackNavigator({
+  Home: { screen: HomeScreen }
+})
 
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <SimpleApp /> */}
-      <Text>Open up App.js to start working on your app!</Text>
+      <Navigator style={{ width: Dimensions.get('window').width }} />
     </View>
   )
 }
@@ -27,6 +32,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight
   }
 })
