@@ -16,7 +16,7 @@ I want to check I can implement mobile apps without `eject`.
 
 - [x] Use react-navigation
 - [ ] OAuth with Twitter and Facebook
-- [ ] Use Google Map
+- [x] Use Google Map
 - [ ] Animation
 - [ ] CI
 - [ ] CodePush

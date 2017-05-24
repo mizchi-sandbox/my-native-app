@@ -1,2 +1,4 @@
 extends:
   - mizchi
+rules:
+  import/named: 0

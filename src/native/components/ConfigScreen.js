@@ -6,7 +6,7 @@ import withNavigation from './hoc/withNavigation'
 
 export default compose(
   withNavigation({ title: 'Config' })
-)(function ConfigScreen(props: { navigation: $$NavigationProps }) {
+)(function ConfigScreen(_props: { navigation: $$NavigationProps }) {
   return (
     <View>
       <Text>This is ConfigScreen</Text>

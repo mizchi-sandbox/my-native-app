@@ -12,7 +12,12 @@ export default compose(
     <Container>
       <Button onPress={() => navigate('Config')}>
         <Text>
-          Button
+          Config
+        </Text>
+      </Button>
+      <Button onPress={() => navigate('Map')}>
+        <Text>
+          Map
         </Text>
       </Button>
     </Container>

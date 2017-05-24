@@ -1,7 +1,8 @@
 /* @flow */
 import React from 'react'
 import { compose } from 'recompose'
-import { Text, View, Button } from 'react-native'
+import { View, Button } from 'react-native'
+import { Facebook } from 'expo'
 import withNavigation from './hoc/withNavigation'
 
 export default compose(
@@ -10,8 +11,20 @@ export default compose(
   const { navigate } = props.navigation
   return (
     <View>
-      <Text>This is LoginScreen</Text>
       <Button onPress={() => navigate('Home')} title="Enter" />
+      <Button
+        title="Login to Facebook"
+        onPress={async () => {
+          const {
+            type
+          } = await Facebook.logInWithReadPermissionsAsync('135318889866649', {
+            permissions: ['public_profile', 'email']
+          })
+          if (type === 'success') {
+            navigate('Home')
+          }
+        }}
+      />
     </View>
   )
 })
