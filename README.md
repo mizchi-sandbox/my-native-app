@@ -1,6 +1,6 @@
 # My Native App
 
-This repository is my experiment field with react-native
+This repository is my experimental field with react-native
 
 - create-react-native-app
 - react-navigation
@@ -15,11 +15,13 @@ I want to check I can implement mobile apps without `eject`.
 ## TODO
 
 - [x] Use react-navigation
-- [ ] OAuth with Twitter and Facebook
+- [x] Use native-base
+- [x] Login with Faceebook
+- [ ] Login with Twitter
 - [x] Use Google Map
 - [ ] Animation
-- [ ] CI
 - [ ] CodePush
+- [ ] CI
 - [ ] Firebase
 
 ---
