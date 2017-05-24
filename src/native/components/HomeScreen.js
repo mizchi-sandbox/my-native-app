@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react'
 import { compose } from 'recompose'
-import { Text, View, Button } from 'react-native'
+import { Container, Button, Text } from 'native-base'
 import withNavigation from './hoc/withNavigation'
 
 export default compose(
@@ -9,9 +9,12 @@ export default compose(
 )(function ConfigScreen(props: { navigation: $$NavigationProps }) {
   const { navigate } = props.navigation
   return (
-    <View>
-      <Text>This is HomeScreen</Text>
-      <Button onPress={() => navigate('Config')} title="> Config" />
-    </View>
+    <Container>
+      <Button onPress={() => navigate('Config')}>
+        <Text>
+          Button
+        </Text>
+      </Button>
+    </Container>
   )
 })
